@@ -14,7 +14,6 @@ import edu.umkc.util.TweetUtil;
 
 public class TweetText {
 	
-	//Should be text for a brand
 	private static final String query = "select text, user.followers_count from tweets order by user.followers_count desc";
 	
 	public static String getText() {

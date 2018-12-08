@@ -4,23 +4,17 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.apache.spark.sql.Column;
 import org.apache.spark.sql.Dataset;
-import org.apache.spark.sql.Encoders;
 import org.apache.spark.sql.Row;
-import org.apache.spark.sql.SparkSession;
 
 import com.google.gson.Gson;
 
 import edu.umkc.util.InitTweets;
 
-import org.apache.spark.api.java.JavaRDD;
-import org.apache.spark.api.java.function.Function;
-
-
 public class SensitiveTweetCounts {
 	
-	private static final String query = "select possibly_sensitive, count(*) from tweets where possibly_sensitive = 'true' or possibly_sensitive='false' group by possibly_sensitive";
+	private static final String query = "select possibly_sensitive, count(*) from tweets where possibly_sensitive = 'true' or "
+			+ "possibly_sensitive='false' group by possibly_sensitive";
 	
 	public static String getSensitiveTweetCount() {
 		Dataset<Row> sqlDF = InitTweets.getInstance().spark.sql(query);

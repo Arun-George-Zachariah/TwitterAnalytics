@@ -22,7 +22,10 @@ public class WeeklyAnalytics {
 	    List<Row> col = sqlDF.collectAsList();
 	    Map<String, String> resultMap = new HashMap<String, String>();
 	    for(Row cols : col) {
-	    	resultMap.put(String.valueOf(cols.get(0)), String.valueOf(cols.get(1)));
+	    	System.out.println("Arungeorge :: " + String.valueOf(cols.get(0)));
+	    	if(!("null".equals(String.valueOf(cols.get(0))))) {
+	    		resultMap.put(String.valueOf(cols.get(0)), String.valueOf(cols.get(1)));
+	    	}
 	    }
 	    
 	    Gson gson = new Gson(); 
