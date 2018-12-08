@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brand Analytics</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css">
+  <link href="styles/twitterStyle.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="https://www.google.com/jsapi?fake=.js"></script>
+  <script src= "https://cdn.zingchart.com/zingchart.min.js"></script>
+  <script> zingchart.MODULESDIR = "https://cdn.zingchart.com/modules/"; ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9","ee6b7db5b51705a13dc2339db3edaf6d"];</script>
+  <script src="scripts/ajax.js"></script>
+  <script src="scripts/load.js"></script>
+  <script src="scripts/tweetCounts.js"></script>
+  <script src="scripts/geoLocationStats.js"></script>
+  <script src="scripts/MaxRetweeted.js"></script>
+  <script src="scripts/userTweetDates.js"></script>
+  <script src="scripts/verifiedUsers.js"></script>
+  <script src="scripts/weeklyAnalytics.js"></script>
+  <script src="scripts/languageDist.js"></script>
+  <script src="scripts/sensitiveContent.js"></script>
+  <script src="scripts/totalUser.js"></script>
+</head>
+<body>
+
+<div id="accordion">
+  <h3>1. Brand Reach.</h3>
+  <div>
+    <div id="tweetCountContainer" style="height: 300px; width: 100%;"></div>
+  </div>
+  <h3>2. Geographical Distribution of Tweets.</h3>
+  <div>
+    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+  </div>
+  <h3>3. Most Retweeted Tweet.</h3>
+  <div>
+    <div id="retweeted"></div>
+  </div>
+  <h3>4. Yearly tweet distribution.</h3>
+  <div>
+    <div id="UserTweetDates" style="height: 300px; width: 100%;"></div>
+  </div>
+  <h3>5. Total Users Reached.</h3>
+  <div>
+    <div id="totalUsers" style="height: 25px; width: 100%;"></div>
+  </div>
+  <h3>6. Weekly Tweet Distribution.</h3>
+  <div>
+    <div id="weekyAnalyticsContainer" style="height: 370px; width: 100%;"></div>
+  </div>
+  <h3>7. Tweet Language Diversity.</h3>
+  <div>
+    <div id="languageDist" style="height: 300px; width: 100%;"></div>
+  </div>
+  <h3>8. Most Popular Tweet Sentiment.</h3>
+  <div>
+    <div id="languageDist" style="height: 300px; width: 100%;">
+      <img src="images/ThumbsUp.png" id = "up" height="100" width="100">
+    </div>
+  </div>
+  <h3>9. Sensitive Content Statistics.</h3>
+  <div>
+    <div id="sensitiveCont" style="height: 300px; width: 100%;"></div>
+  </div>
+  <h3>10. Verified Users Tweeted.</h3>
+  <div>
+    <div id="VerifiedUsers" style="height: 300px; width: 100%;"></div>
+  </div>
+</div>
+
+
+</body>
+</html>
