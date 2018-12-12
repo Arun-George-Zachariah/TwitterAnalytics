@@ -7,9 +7,11 @@ $(document).ready(function(){
   getGeoLocation();
   getMaxRetweeted();
   getUserTweetDates();
-  getVerifiedUsers();
+  getTotalUsers();
   getWeeklyData();
   getLangDiversity();
+  getTweetSentiment();
   getSenstiveContentDist();
-  getTotalUsers();
+  getVerifiedUsers();
+  getFriendsCount();
 });

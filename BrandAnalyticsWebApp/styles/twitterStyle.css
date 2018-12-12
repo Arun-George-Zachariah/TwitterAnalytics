@@ -30,3 +30,16 @@ blockquote.twitter-tweet a:hover,
 blockquote.twitter-tweet a:focus {
   text-decoration: underline;
 }
+
+body {
+  background-color: #87CEFA;
+}
+
+h1 {
+  font-family: Impact, Charcoal, sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-family: Impact, Charcoal, sans-serif;
+}

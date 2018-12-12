@@ -33,8 +33,8 @@ function getVerifiedUsers() {
       sizeAxis: {minValue: 1, maxValue:1,minSize:5,  maxSize: 5},
       region:'world',
       keepAspectRatio: true,
-      width:400,
-      height:300,
+      width:1000,
+      height:500,
       tooltip: {textStyle: {color: '#444444'}}
     };
     var chart = new   google.visualization.GeoChart(document.getElementById('VerifiedUsers'));

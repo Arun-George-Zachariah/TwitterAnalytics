@@ -24,17 +24,19 @@
   <script src="scripts/languageDist.js"></script>
   <script src="scripts/sensitiveContent.js"></script>
   <script src="scripts/totalUser.js"></script>
+  <script src="scripts/tweetSentiment.js"></script>
+  <script src="scripts/friendsCount.js"></script>
 </head>
 <body>
-
+  <h1>Twitter Analytics</h1>
 <div id="accordion">
   <h3>1. Brand Reach.</h3>
   <div>
-    <div id="tweetCountContainer" style="height: 300px; width: 100%;"></div>
+    <div id="tweetCountContainer" style="height: 90%; width: 100%;"></div>
   </div>
   <h3>2. Geographical Distribution of Tweets.</h3>
   <div>
-    <div id="regions_div" style="width: 900px; height: 500px;"></div>
+    <div id="regions_div" style="width: 90%; height: 500px;"></div>
   </div>
   <h3>3. Most Retweeted Tweet.</h3>
   <div>
@@ -42,36 +44,40 @@
   </div>
   <h3>4. Yearly tweet distribution.</h3>
   <div>
-    <div id="UserTweetDates" style="height: 300px; width: 100%;"></div>
+    <div id="UserTweetDates" style="height: 90%; width: 100%;"></div>
   </div>
   <h3>5. Total Users Reached.</h3>
   <div>
-    <div id="totalUsers" style="height: 25px; width: 100%;"></div>
+    <div id="totalUsers" style="height: 90%; width: 100%;"></div>
   </div>
   <h3>6. Weekly Tweet Distribution.</h3>
   <div>
-    <div id="weekyAnalyticsContainer" style="height: 370px; width: 100%;"></div>
+    <div id="weekyAnalyticsContainer" style="height: 90%; width: 100%;"></div>
   </div>
   <h3>7. Tweet Language Diversity.</h3>
   <div>
-    <div id="languageDist" style="height: 300px; width: 100%;"></div>
+    <div id="languageDist" style="height: 90%; width: 100%;"></div>
   </div>
   <h3>8. Most Popular Tweet Sentiment.</h3>
   <div>
-    <div id="languageDist" style="height: 300px; width: 100%;">
-      <img src="images/ThumbsUp.png" id = "up" height="100" width="100">
+    <div id="tweetSent" style="height: 90%; width: 100%;">
+      <img src="images/ThumbsUp.png" id = "up" height="100" width="100" style="display: none;">
+      <img src="images/ThumbsDown.jpg" id = "down" height="100" width="100" style="display: none;">
+      <img src="images/Neutral.png" id = "neutral" height="100" width="100" style="display: none;">
     </div>
   </div>
   <h3>9. Sensitive Content Statistics.</h3>
   <div>
-    <div id="sensitiveCont" style="height: 300px; width: 100%;"></div>
+    <div id="sensitiveCont" style="height: 90%; width: 100%;"></div>
   </div>
   <h3>10. Verified Users Tweeted.</h3>
   <div>
-    <div id="VerifiedUsers" style="height: 300px; width: 100%;"></div>
+    <div id="VerifiedUsers" style="height: 90%; width: 100%;"></div>
+  </div>
+  <h3>11. User Friends Counts.</h3>
+  <div>
+    <div id="friendsCountContainer" style="height: 90%; width: 100%;"></div>
   </div>
 </div>
-
-
 </body>
 </html>
