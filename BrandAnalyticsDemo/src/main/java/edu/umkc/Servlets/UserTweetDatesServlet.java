@@ -10,18 +10,12 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import edu.umkc.Analytics.BrandTweetCounts;
 import edu.umkc.Analytics.UserTweetDates;
-import edu.umkc.Analytics.WeeklyAnalytics;
 
 @WebServlet("/UserTweetDates")
 public class UserTweetDatesServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	private static final Logger logger = LogManager.getLogger(UserTweetDatesServlet.class.getName());
 	
 	@Override
 	public void init() throws ServletException {

@@ -69,6 +69,7 @@ public class TweetUtil {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		System.out.println("The sentiment returned :: " + retVal);
 		return retVal;
 	}
 }

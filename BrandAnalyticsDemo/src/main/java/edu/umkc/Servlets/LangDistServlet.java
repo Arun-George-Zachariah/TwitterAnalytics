@@ -19,7 +19,6 @@ import edu.umkc.Analytics.LanguageDistribution;
 public class LangDistServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
-	private static final Logger logger = LogManager.getLogger(LangDistServlet.class.getName());
 	
 	@Override
 	public void init() throws ServletException {
