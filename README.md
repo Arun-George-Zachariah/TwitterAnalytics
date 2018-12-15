@@ -5,3 +5,15 @@ Through this project, we decide to design, develop and execute a web application
 
 ## To build the code. <br>
 ```mvn clean package```
+
+## To create the container. <br>
+
+```docker build -t <build_name> .```
+
+## To start the container process. <br>
+	
+```docker run -ti --rm --name server -p 9090:8080 <build_name>```
+
+## To view the visualization. <br>
+
+http://localhost:9090/BrandAnalyticsWebApp/
