@@ -9,7 +9,7 @@ function getGeoLocation() {
   });
   google.charts.setOnLoadCallback(drawRegionsMap);
 
-  var req = ajax('http://localhost:8080/BrandAnalyticsDemo/GeoLocationStats','GET');
+  var req = ajax('http://134.193.128.69:9090/BrandAnalyticsDemo/GeoLocationStats','GET');
   req.onreadystatechange = function() {
     if (req.readyState == 4 && req.status == 200) {
       output = JSON.parse(req.responseText);
