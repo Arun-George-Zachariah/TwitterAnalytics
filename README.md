@@ -17,3 +17,5 @@ Through this project, we decide to design, develop and execute a web application
 ## To view the visualization. <br>
 
 http://localhost:9090/BrandAnalyticsWebApp/
+
+![](Twitter_Analytics_Demo.gif)
